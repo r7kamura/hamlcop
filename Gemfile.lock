@@ -3,6 +3,7 @@ PATH
   specs:
     hamlcop (0.1.0)
       hamli
+      templatecop
 
 GEM
   remote: https://rubygems.org/
@@ -45,6 +46,10 @@ GEM
     rubocop-rspec (2.8.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
+    templatecop (0.2.2)
+      parallel
+      parser
+      rubocop (>= 0.87)
     temple (0.8.2)
     unicode-display_width (2.1.0)
 

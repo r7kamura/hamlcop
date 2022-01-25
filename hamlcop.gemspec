@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   spec.add_dependency 'hamli'
+  spec.add_dependency 'templatecop'
 end
