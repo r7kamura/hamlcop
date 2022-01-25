@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "hamlcop/version"
+require_relative 'hamlcop/version'
 
 module Hamlcop
   class Error < StandardError; end
