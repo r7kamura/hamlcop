@@ -3,6 +3,5 @@
 require_relative 'hamlcop/version'
 
 module Hamlcop
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :RubyExtractor, 'hamlcop/ruby_extractor'
 end

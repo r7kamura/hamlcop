@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+require 'hamlcop'
+require 'templatecop'
+
+Templatecop::Cli.call(
+  default_configuration_path: File.expand_path('../default.yml', __dir__),
+  default_path_patterns: %w[**/*.haml],
+  executable_name: 'hamlcop',
+  implicit_configuration_paths: %w[.hamlcop.yml .rubocop.yml],
+  ruby_extractor: Hamlcop::RubyExtractor
+)
