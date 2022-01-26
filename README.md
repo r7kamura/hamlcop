@@ -36,3 +36,25 @@ Usage: hamlcop [options] [file1, file2, ...]
     -c, --config=                    Specify configuration file.
         --[no-]color                 Force color output on or off.
 ```
+
+### Example
+
+```console
+$ hamlcop "spec/fixtures/**/*.haml"
+Inspecting 1 file
+C
+
+Offenses:
+
+spec/fixtures/dummy.haml:1:13: C: [Correctable] Style/CharacterLiteral: Do not use the character literal - use string literal instead.
+%div(a="b #{?c}")
+            ^^
+spec/fixtures/dummy.haml:2:7: C: [Correctable] Style/HashSyntax: Use the new Ruby 1.9 hash syntax.
+%div{ :a => "b" }
+      ^^^^^
+spec/fixtures/dummy.haml:2:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+%div{ :a => "b" }
+            ^^^
+
+1 file inspected, 3 offenses detected, 3 offenses auto-correctable
+```
