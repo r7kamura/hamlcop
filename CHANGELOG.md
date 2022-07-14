@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.1 - 2022-07-14
+
 ### Fixed
 
 - Traverse nodes nested under control nodes.
