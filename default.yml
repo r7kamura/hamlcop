@@ -121,6 +121,9 @@ Style/NestedTernaryOperator:
 Style/Next:
   Enabled: false
 
+Style/ParallelAssignment:
+  Enabled: false
+
 Style/RescueModifier:
   Enabled: false
 
