@@ -124,6 +124,9 @@ Style/Next:
 Style/RescueModifier:
   Enabled: false
 
+Style/Semicolon:
+  Enabled: false
+
 Style/TrailingCommaInArguments:
   Enabled: false
 
