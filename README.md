@@ -58,3 +58,21 @@ spec/fixtures/dummy.haml:2:13: C: [Correctable] Style/StringLiterals: Prefer sin
 
 1 file inspected, 3 offenses detected, 3 offenses auto-correctable
 ```
+
+### Configuration
+
+Hamlcop will start looking for the configuration file in the following locations:
+
+1. /path/to/project/.hamlcop.yml
+2. /path/to/project/.rubocop.yml
+
+For example, if you want to disable some cops on hamlcop, you can add the following file to your project:
+
+```yaml
+# .hamlcop.yml
+inherit_from:
+  - .rubocop.yml
+
+Foo/Bar:
+  Enabled: false
+```
