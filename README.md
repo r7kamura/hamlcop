@@ -5,6 +5,9 @@
 
 [RuboCop](https://github.com/rubocop/rubocop) runner for [Haml template](https://github.com/haml/haml).
 
+> [!WARNING]
+> This gem has been deprecated. Please consider using [rubocop-haml](https://github.com/r7kamura/rubocop-haml) instead.
+
 ## Installation
 
 Add this line to your application's Gemfile:
